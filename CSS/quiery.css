@@ -1,0 +1,81 @@
+
+@media (max-width: 550px) {
+
+    h2.adventure__heading,
+    h2.mail__heading {
+        font-size: 32px;
+    }
+
+    h3.mail__sub,
+    h3.adventure__sub,
+    h3.Acard__heading {
+        font-size: 20px;
+    }
+
+    section.hero {
+        clip-path: none;
+    }
+
+    nav.nav {
+        display: none;
+    }
+
+    h1.hero__heading {
+        font-size: 48px;
+    }
+
+    section.hero {
+        min-height: 60vh;
+    }
+
+    img.hero__arrow {
+        max-width: 32px;
+    }
+
+    section.adventure {
+        padding: 48px 20px;
+        padding-top: 48px;
+    }
+
+    h2.adventure__heading {
+        margin-bottom: 40px;
+    }
+
+    section.mountain {
+        padding: 48px 20px;
+    }
+
+    section.mail {
+        padding: 48px 20px;
+        min-height: 60vh;
+    }
+
+}
+
+@media (max-width: 460px) {
+    section.mailcontent {
+        width: 100%;
+        margin-bottom: 90px;
+    }
+
+    footer.footer__wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul.footerlist {
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    section.Mcardbody {
+        max-width: 220px;
+    }
+    
+    section.Mcard {
+        min-height: 540px;
+    
+    }
+}

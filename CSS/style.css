@@ -1,0 +1,508 @@
+/*--------- */
+/*CSS RESET*/
+/*---------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+/*--------------*/
+/*GENERAL SIZING*/
+/*--------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #060606;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+
+}
+
+/*-----------------------*/
+/*STYLING THE NAVIGATION*/
+/*----------------------*/
+
+header.header {
+    background: transparent;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+section.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+div.hamburger {
+    cursor: pointer;
+}
+
+
+span.hamburger__bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #ffffff;
+}
+
+ul.nav__list {
+    display: flex;
+    gap: 40px;
+}
+
+a.nav__link {
+    color: #ffffff;
+    font-weight: 400;
+    opacity: 0.65;
+    transition: all 0.3s ease-in-out;
+}
+
+a.nav__link:hover {
+    opacity: 1;
+    box-shadow: 0 -10px 0 -8px #ffffff inset;
+  
+}
+
+
+a.nav__link.active {
+    opacity: 1;
+    box-shadow: 0 -10px 0 -8px #ffffff inset;
+}
+
+
+
+/*-------------------------*/
+/*STYLING THE HERO SECTION*/
+/*-------------------------*/
+
+
+section.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 16.98%, rgba(0, 0, 0, 0.1) 84.31%), url(/Images/california-hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 84%, 0 100%);
+    padding-top: 72px;
+}
+
+section.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+h1.hero__heading {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+p.hero__sub {
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+a.hero__btn {
+    text-decoration: none;
+    background: #ff9900;
+    color: #060606;
+    font-weight: 600;
+    padding: 16px 32px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+a.hero__btn:hover {
+    background: #ffffff;
+    color: #060606;
+
+}
+
+section.herotext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span.hero__span {
+    font-weight: 600;
+    color: #ff9900;
+}
+
+img.hero__arrow {
+    animation: 2.4s ease-in-out infinite float;
+    max-width: 32px;
+    
+}
+
+/*-----------------------------*/
+/*STYLING THE ADVENTURE SECTION*/
+/*-----------------------------*/
+
+
+section.adventure {
+    padding: 80px 20px;
+    padding-top: 8px;
+}
+
+h2.adventure__heading {
+    text-align: center;
+    font-size: 40px;
+    color: #060606;
+    font-weight: 600;
+    margin-bottom: 80px;
+
+}
+
+h3.adventure__sub {
+    text-align: center;
+    color: #cc8404;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+section.adventure__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+section.Acard {
+    flex: 1 250px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.Acard.plane-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 16.98%, rgba(0, 0, 0, 0.7) 84.31%), url(/Images/airplane-wing-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+section.Acard.reservation-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 16.98%, rgba(0, 0, 0, 0.7) 84.31%), url(/Images/beach-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+section.Acard.trip-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 16.98%, rgba(0, 0, 0, 0.7) 84.31%), url(/Images/study-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+h3.Acard__heading {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+img.Acard__icon {
+    max-width: 40px;
+}
+
+p.Acard__copy {
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+a.Acard__button {
+    margin-top: auto;
+    color: #241601;
+    background: #ff9900;
+    width: fit-content;
+    padding: 8px 24px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+a.Acard__button:hover {
+    background: #ffffff;
+}
+
+
+/*-------------------------------*/
+/*STYLING THE DESTINATION SECTION*/
+/*-------------------------------*/
+
+section.mountain {
+    background: linear-gradient(rgba(255, 255, 255, 0.2) 16.98%, rgba(255, 255, 255, 0.2) 84.31%), url(/Images/Hollywood-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+}
+
+
+
+section.mountain__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+section.Mcardtop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 12px;
+}
+
+section.cardrating {
+    display: flex;
+    gap: 2px;
+}
+
+section.Mcardbody {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #ffffff;
+    padding: 24px;
+    max-width: 325px;
+    margin: 0 auto;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    box-shadow: #00000045 4px 4px 30px;
+}
+
+p.Mcardtop__heading {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    max-width: 126px;
+}
+
+a.Mcardbody__link {
+    color: #0669c4;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+a.Mcardbody__link:hover {
+    color: #033463;
+}
+
+a.Mcardbody__link:hover::after {
+    color: #033463;
+    transform: translateX(10px);
+}
+
+a.Mcardbody__link::after {
+    content: "\f054";
+    font-weight: 900;
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 14px;
+    margin-left: 10px;
+    color: #0669c4;
+    transition: all 0.3s ease-in-out;
+}
+
+p.Mcardbody__copy {
+    color: #606060;
+}
+
+img.cardrating__img.last-star {
+    filter: grayscale(1);
+}
+
+section.Mcard {
+    background: #e6e6e6;
+    position: relative;
+    min-height: 462px;
+    flex: 1 335px;
+    box-shadow: #00000045 4px 4px 30px;
+}
+
+img.Mcard__img {
+    width: 100%;
+    object-fit: cover;
+    height: 280px;
+}
+
+/*--------------------------------*/
+/*STYLING THE MAILING LIST SECTION*/
+/*-------------------------------*/
+
+section.mail {
+    background: linear-gradient(rgba(0, 0, 0, 0.16) 16.98%, rgba(0, 0, 0, 0.50) 84.31%), url(/Images/SF-Bridge-footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 70vh;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+section.mail__wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2.mail__heading {
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+h3.mail__sub {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+}
+
+form.form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+input.input {
+    padding: 16px;
+    width: 100%;
+    max-width: 700px;
+}
+
+a.form__button {
+    color: #241601;
+    background: #ff9900;
+    width: fit-content;
+    padding: 16px 32px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+a.form__button:hover {
+    background: #ffffff;
+
+}
+
+section.mailcontent {
+    width: 100%;
+}
+
+
+/*-------------------*/
+/*STYLING THE FOOTER*/
+/*-------------------*/
+
+section.footer {
+    position: relative;
+}
+
+footer.footer {
+    padding: 40px 20px;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul.footerlist {
+    display: flex;
+    gap: 40px;
+}
+
+a.footerlist__link.active {
+    opacity: 1;
+    box-shadow: 0 -10px 0 -8px #ffffff inset;
+}
+
+a.footerlist__link {
+    color: #ffffff;
+    font-weight: 400;
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+
+a.footerlist__link:hover {
+    opacity: 1;
+    box-shadow: 0 -10px 0 -8px #ffffff inset;
+
+}
+
+a.totop {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
